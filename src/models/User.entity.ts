@@ -7,7 +7,7 @@ export class User {
   @PrimaryGeneratedColumn('uuid')
   id!: string
 
-  @Column({ type: 'integer', length: 11, unique: true, nullable: false })
+  @Column({ type: 'integer', unique: true, nullable: false })
   cpf!: number
 
   @Column({ type: 'varchar', length: 50, unique: true, nullable: false })
